@@ -1,6 +1,6 @@
 //Your code here
 fucntion justInvoke(fn){
-  return fn()
+  return fn();
 }
 
 
