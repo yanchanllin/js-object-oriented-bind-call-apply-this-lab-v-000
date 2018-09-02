@@ -1,9 +1,11 @@
 //Your code here
-justInvoke(fn)
+fucntion justInvoke(fn){
+  return fn()
+}
 
 
 setThisWithCall(fn, thisValue, arg)
 
 setThisWithApply(fn, thisValue, args)
 
-returnNewFunctionOf(functionToBeCopied, thisValue
+returnNewFunctionOf(functionToBeCopied, thisValue)
