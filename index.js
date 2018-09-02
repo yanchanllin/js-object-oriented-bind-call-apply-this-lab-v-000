@@ -1,11 +1,16 @@
-//Your code here
-fucntion justInvoke(fn){
+function justInvoke(fn) {
   return fn();
 }
 
+function setThisWithCall(fn, thisValue, arg) {
+  return fn.call(thisValue, arg);
+}
 
-setThisWithCall(fn, thisValue, arg)
+function setThisWithApply(fn, thisValue, arg) {
+  return fn.apply(thisValue, arg);
+}
 
-setThisWithApply(fn, thisValue, args)
-
-returnNewFunctionOf(functionToBeCopied, thisValue)
+function returnNewFunctionOf(functionToBeCopied, thisValue) {
+  const copy = functionToBeCopied.bind(thisValue);
+  return copy;
+}
